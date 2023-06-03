@@ -1,0 +1,81 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: darkorange;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+header .logo img {
+    height: 70px;
+    width: auto;
+}
+
+header .nav-link {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+header .nav-link li {
+    padding: 0 20px;
+}
+
+header .nav-link li a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin: 80px;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    /* grid-template-columns: repeat(6, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+
+article {
+    max-width: 270px;
+}
+
+article h6 {
+    font-size: 16px;
+}
+
+article img {
+    width: 270px;
+    height: 270px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+article .ubicacion-puntuación {
+    display: flex;
+    justify-content: space-between;
+}
+
+article .descripcion {
+    color: gray;
+}
+
+article .fecha {
+    color: gray;
+}
+
+article .precio {
+    margin-top: 2px;
+    font-weight: 700;
+}
